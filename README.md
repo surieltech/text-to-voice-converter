@@ -1,44 +1,32 @@
-# 🗣️ Conversor de Texto para Voz (Text-to-Speech)
+# 🗣️ Conversor de Texto para Voz
 
-Um conversor simples e elegante que transforma texto escrito em áudio utilizando a **Web Speech API** do navegador.  
-O usuário pode digitar qualquer frase, escolher entre diversas vozes disponíveis no sistema e ouvir a narração com um clique.
-
-![Demonstração do projeto](src/img/play.png) *Exemplo visual do botão de play*
-
----
+Conversor simples e elegante que transforma texto digitado em áudio usando a **Web Speech API**. O usuário digita um texto, escolhe uma voz disponível no sistema e clica para ouvir.
 
 ## ✨ Funcionalidades
 
-- ✅ Digitar ou colar qualquer texto na área de entrada.
-- 🔊 Ouvir o texto falado em voz alta.
-- 🗣️ Selecionar diferentes vozes disponíveis no sistema operacional ou navegador.
-- 🎨 Interface com gradiente moderno e responsiva.
-- ⚡ Suporte a múltiplos idiomas (dependendo das vozes instaladas no sistema).
+- Digitar ou colar qualquer texto na área de entrada.
+- Ouvir o texto falado em voz alta.
+- Selecionar diferentes vozes disponíveis no navegador/sistema.
+- Interface com gradiente roxo/rosa, responsiva e moderna.
+- Botão com ícone de play e seletor de vozes customizado.
 
----
-
-## 🧠 Tecnologias utilizadas
+## 🧠 Tecnologias
 
 - **HTML5** – estrutura da página.
-- **CSS3** – estilização visual (gradientes, botões, campo de texto).
-- **JavaScript (ES6)** – lógica de conversão, carregamento de vozes e interação com a API.
-- **Web Speech API** – funcionalidade de síntese de fala (`SpeechSynthesisUtterance`).
+- **CSS3** – estilização (gradientes, flexbox, aparência personalizada).
+- **JavaScript (ES6)** – lógica de carregamento de vozes e síntese de fala.
+- **Web Speech API** – `SpeechSynthesisUtterance` e `window.speechSynthesis`.
 
----
-
-## 📁 Estrutura do projeto
+## 📁 Estrutura
 text-to-speech-converter/
-│
-├── index.html # Página principal
+├── index.html
 ├── src/
-│ ├── style.css # Estilos da interface
-│ ├── script.js # Lógica de funcionamento
+│ ├── style.css
+│ ├── script.js
 │ └── img/
-│ ├── play.png # Ícone do botão "Ouvir"
-│ └── dropdown.png# Ícone do seletor de vozes
-└── README.md # Este arquivo
-
-text
+│ ├── play.png
+│ └── dropdown.png
+└── README.md
 
 > **Observação:** As imagens `play.png` e `dropdown.png` devem estar na pasta `src/img/` para que os ícones sejam exibidos corretamente.
 
@@ -62,33 +50,22 @@ text
 - **Lista de vozes:** o JavaScript carrega automaticamente as vozes disponíveis no sistema. Você pode filtrar por idioma modificando o código em `script.js`.
 - **Velocidade e tom:** é possível adicionar propriedades como `speech.rate` (velocidade) e `speech.pitch` (tom) no arquivo JavaScript.
 
-Exemplo:
-```javascript
-speech.rate = 1.2;   // velocidade 20% mais rápida
-speech.pitch = 1.1;  // tom ligeiramente mais alto
+## 🌐 Suporte a navegadores
 
-🌐 Suporte a navegadores
-Navegador	Suporte
-Google Chrome	✅ Completo
-Microsoft Edge	✅ Completo
-Mozilla Firefox	✅ Completo
-Safari (macOS/iOS)	✅ Parcial (vozes limitadas)
-Opera	✅ Completo
-A API pode não funcionar em navegadores muito antigos ou no Internet Explorer.
+| Navegador | Suporte |
+|-----------|---------|
+| Chrome | ✅ Completo |
+| Edge | ✅ Completo |
+| Firefox | ✅ Completo |
+| Safari | ⚠️ Parcial (vozes limitadas) |
 
-🧩 Possíveis melhorias futuras
-Adicionar controles de velocidade e tom (sliders).
+## 🧩 Melhorias possíveis
 
-Permitir pausar/retomar a leitura.
+- Sliders para velocidade e tom.
+- Pausar/retomar a leitura.
+- Salvar vozes favoritas.
+- Suporte a arrastar arquivos de texto.
 
-Salvar vozes favoritas no localStorage.
+## 📝 Licença
 
-Suporte a arrastar e soltar arquivos de texto.
-
-Botão para limpar o texto rapidamente.
-
-Detecção automática do idioma do texto.
-
-📝 Licença
-Este projeto é de código aberto e pode ser usado livremente para fins educacionais ou pessoais.
-Sinta-se à vontade para modificar e distribuir.
+Código aberto para fins educacionais e pessoais. Sinta-se livre para modificar e distribuir.
