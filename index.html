@@ -9,15 +9,23 @@
 <body>
 
     <div class="hero">
-       <h1>Conversor de texto para <span>Voz</span></h1> 
-       <textarea placeholder="Digite qualquer coisa aqui..."></textarea>
+        <h1>Conversor de texto para <span>Voz</span></h1>
+        <textarea placeholder="Digite qualquer coisa aqui..."></textarea>
 
-       <div class="row">
-         <select></select>
+        <div class="speed-box">
+            <span>Velocidade: </span>
+            <input type="range" id="velocidade" min="0.5" max="2" step="0.1" value="1">
+            <span id="velocidadeValor">1.0x</span>
+        </div>
 
-         <button><img src="src/img/play.png">Ouvir</button>
-       </div>
+        <div class="row">
+            <select></select>
+            <button><img src="src/img/play.png"> Ouvir</button>
+            
+            <button id="btnLimpar" class="btn-limpar"> Limpar</button>
+        </div>
     </div>
-<script src="src/script.js"></script>
+
+    <script src="src/script.js"></script>
 </body>
 </html>

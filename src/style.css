@@ -46,6 +46,33 @@ textarea::placeholder{
     color: #bbb;
 }
 
+.speed-box {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.speed-box input {
+    flex: 1;
+    height: 5px;
+    border-radius: 5px;
+    background: #403d84;
+    -webkit-appearance: none;
+}
+
+.speed-box input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ff2963;
+    cursor: pointer;
+}
+
 .row{
     width: 600px;
     display: flex;
@@ -71,6 +98,11 @@ button img{
     margin-right: 10px;
 }
 
+button:hover {
+    background: #218838;
+    cursor: pointer;
+}
+
 select{
     flex: 1;
     color: #fff;
@@ -86,4 +118,13 @@ select{
     background-size: 15px;
     background-position-x: calc(100% - 20px);
     background-position-y: 20px;
+}
+
+.btn-limpar {
+    background: #dc3545 !important;  
+    transition: 0.2s;
+}
+
+.btn-limpar:hover {
+    background: #a71d2a !important;  
 }

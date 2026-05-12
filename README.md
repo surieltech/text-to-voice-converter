@@ -61,11 +61,13 @@ text-to-speech-converter/
 
 ## 🧩 Melhorias possíveis
 
-- Sliders para velocidade e tom.
-- Pausar/retomar a leitura.
-- Salvar vozes favoritas.
-- Suporte a arrastar arquivos de texto.
+- Adicionar botão pausar/retomar a leitura.
+- Incluir slider para controle de tom (pitch).
+- Suporte a arrastar e soltar arquivos de texto.
+- Salvar texto e velocidade favoritos no `localStorage`.
+- Detecção automática do idioma do texto.
 
 ## 📝 Licença
 
-Código aberto para fins educacionais e pessoais. Sinta-se livre para modificar e distribuir.
+Este projeto é de código aberto e pode ser usado livremente para fins educacionais ou pessoais.  
+Sinta-se à vontade para modificar e distribuir.
